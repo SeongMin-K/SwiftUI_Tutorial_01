@@ -13,17 +13,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("안녕하세요!")
-                    .font(.system(size: 70))
-                    .bold()
-                    .onTapGesture {
-                        print("Tapped")
-                        withAnimation {
-                            self.isActivated.toggle()
-                        }
+                HStack {
+                    MyVStackView(isActivated: $isActivated)
+                    MyVStackView(isActivated: $isActivated)
+                    MyVStackView(isActivated: $isActivated)
+                }
+                .padding(isActivated ? 30 : 10)
+                .background(isActivated ? Color.yellow : Color.black)
+                .onTapGesture {
+                    print("HStack Tapped")
+                    withAnimation {
+                        self.isActivated.toggle()
                     }
+                }
                 
-                NavigationLink(destination: MyColorView()) {
+                NavigationLink(destination: MyColorView(isActivated: $isActivated)) {
                     Text("네비게이션")
                         .font(.headline)
                         .bold()
@@ -31,8 +35,8 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .background(Color.orange)
                         .cornerRadius(10)
-                    
                 }
+                .padding(.top, 20)
             }
         }
     }

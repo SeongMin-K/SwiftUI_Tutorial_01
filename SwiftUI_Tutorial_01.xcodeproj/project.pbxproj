@@ -12,6 +12,7 @@
 		3ECF93E92749270100F60CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF93E82749270100F60CFF /* Assets.xcassets */; };
 		3ECF93EC2749270100F60CFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF93EB2749270100F60CFF /* Preview Assets.xcassets */; };
 		3ECF93F32749319300F60CFF /* MyColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF93F22749319300F60CFF /* MyColorView.swift */; };
+		3ECF93F52749391A00F60CFF /* MyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF93F42749391A00F60CFF /* MyVStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3ECF93E82749270100F60CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ECF93EB2749270100F60CFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3ECF93F22749319300F60CFF /* MyColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorView.swift; sourceTree = "<group>"; };
+		3ECF93F42749391A00F60CFF /* MyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				3ECF93E82749270100F60CFF /* Assets.xcassets */,
 				3ECF93EA2749270100F60CFF /* Preview Content */,
 				3ECF93F22749319300F60CFF /* MyColorView.swift */,
+				3ECF93F42749391A00F60CFF /* MyVStackView.swift */,
 			);
 			path = SwiftUI_Tutorial_01;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				3ECF93E7274926FF00F60CFF /* ContentView.swift in Sources */,
 				3ECF93F32749319300F60CFF /* MyColorView.swift in Sources */,
+				3ECF93F52749391A00F60CFF /* MyVStackView.swift in Sources */,
 				3ECF93E5274926FF00F60CFF /* SwiftUI_Tutorial_01App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

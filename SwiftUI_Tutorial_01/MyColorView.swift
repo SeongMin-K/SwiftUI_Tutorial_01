@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct MyColorView: View {
+    @Binding var isActivated: Bool
+    
+    init(isActivated: Binding<Bool> = .constant(false)) {
+        _isActivated = isActivated
+    }
+    
     @State private var index: Int = 0
     private let backgroundColors = [Color.red, Color.yellow, Color.green, Color.blue, Color.gray, Color.black]
     
@@ -17,7 +23,6 @@ struct MyColorView: View {
                 .foregroundColor(Color.white)
                 .font(.system(size: 30))
                 .bold()
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .onTapGesture {
                     if self.index == self.backgroundColors.count - 1 {
                         self.index = 0
@@ -25,7 +30,15 @@ struct MyColorView: View {
                         self.index += 1
                     }
                 }
+            
+            Text("활성화 상태: \(String(isActivated))")
+                .foregroundColor(self.isActivated ? Color.yellow : Color.gray)
+                .font(.system(size: 25))
+                .bold()
+                .background(Color.black)
+                .padding(.top, 10)
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(backgroundColors[index])
     }
 }
