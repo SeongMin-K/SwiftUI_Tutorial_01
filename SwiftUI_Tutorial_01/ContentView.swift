@@ -16,6 +16,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                
                 HStack {
                     MyVStackView(isActivated: $isActivated)
                     MyVStackView(isActivated: $isActivated)
@@ -34,7 +36,22 @@ struct ContentView: View {
                     MyText(name: "ColorView", color: Color.orange)
                 }
                 .padding(.vertical, 20)
-            
+                
+                Image("Shark")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .clipShape(Circle())
+                    .shadow(color: Color.blue, radius: 8, x: 5, y: 5)
+                    .overlay(
+                        Circle().stroke(Color.green, lineWidth: 4))
+                    .overlay(
+                        Circle().stroke(Color.yellow, lineWidth: 4)
+                            .padding(4))
+                    .overlay(
+                        Circle().stroke(Color.red, lineWidth: 4)
+                            .padding(8))
+                    .frame(width: 150)
+                
                 HStack {
                     NavigationLink(destination: MyWebView(urlToLoad: urlYoutube)
                         .edgesIgnoringSafeArea(.all))
@@ -52,6 +69,7 @@ struct ContentView: View {
                         MyText(name: "Kakao", color: Color.yellow)
                     }
                 }
+                .padding(.top, 10)
             }
         }
     }
