@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isActivated: Bool = false
+    var urlYoutube = "https://www.youtube.com/channel/UCg_pGaOuYAHvncmq2piUWAQ"
+    var urlGitHub = "https://github.com/SeongMin-K"
+    var urlKakao = "https://open.kakao.com/o/sqP7S3Bd"
     
     var body: some View {
         NavigationView {
@@ -28,15 +31,27 @@ struct ContentView: View {
                 }
                 
                 NavigationLink(destination: MyColorView(isActivated: $isActivated)) {
-                    Text("네비게이션")
-                        .font(.headline)
-                        .bold()
-                        .padding()
-                        .foregroundColor(Color.white)
-                        .background(Color.orange)
-                        .cornerRadius(10)
+                    MyText(name: "ColorView", color: Color.orange)
                 }
-                .padding(.top, 20)
+                .padding(.vertical, 20)
+            
+                HStack {
+                    NavigationLink(destination: MyWebView(urlToLoad: urlYoutube)
+                        .edgesIgnoringSafeArea(.all))
+                    {
+                        MyText(name: "Youtube", color: Color.red)
+                    }
+                    NavigationLink(destination: MyWebView(urlToLoad: urlGitHub)
+                        .edgesIgnoringSafeArea(.all))
+                    {
+                        MyText(name: "GitHub", color: Color.black)
+                    }
+                    NavigationLink(destination: MyWebView(urlToLoad: urlKakao)
+                        .edgesIgnoringSafeArea(.all))
+                    {
+                        MyText(name: "Kakao", color: Color.yellow)
+                    }
+                }
             }
         }
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EABDF6F274A3E1A00FF7DE7 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABDF6E274A3E1A00FF7DE7 /* MyWebView.swift */; };
+		3EABDF72274A400A00FF7DE7 /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EABDF71274A400A00FF7DE7 /* MyText.swift */; };
 		3ECF93E5274926FF00F60CFF /* SwiftUI_Tutorial_01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF93E4274926FF00F60CFF /* SwiftUI_Tutorial_01App.swift */; };
 		3ECF93E7274926FF00F60CFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF93E6274926FF00F60CFF /* ContentView.swift */; };
 		3ECF93E92749270100F60CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF93E82749270100F60CFF /* Assets.xcassets */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EABDF6E274A3E1A00FF7DE7 /* MyWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		3EABDF70274A3E3000FF7DE7 /* SwiftUI-Tutorial-01-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI-Tutorial-01-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3EABDF71274A400A00FF7DE7 /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
 		3ECF93E1274926FF00F60CFF /* SwiftUI_Tutorial_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Tutorial_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECF93E4274926FF00F60CFF /* SwiftUI_Tutorial_01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Tutorial_01App.swift; sourceTree = "<group>"; };
 		3ECF93E6274926FF00F60CFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,12 +60,15 @@
 		3ECF93E3274926FF00F60CFF /* SwiftUI_Tutorial_01 */ = {
 			isa = PBXGroup;
 			children = (
+				3EABDF70274A3E3000FF7DE7 /* SwiftUI-Tutorial-01-Info.plist */,
+				3ECF93E82749270100F60CFF /* Assets.xcassets */,
 				3ECF93E4274926FF00F60CFF /* SwiftUI_Tutorial_01App.swift */,
 				3ECF93E6274926FF00F60CFF /* ContentView.swift */,
-				3ECF93E82749270100F60CFF /* Assets.xcassets */,
-				3ECF93EA2749270100F60CFF /* Preview Content */,
 				3ECF93F22749319300F60CFF /* MyColorView.swift */,
 				3ECF93F42749391A00F60CFF /* MyVStackView.swift */,
+				3EABDF6E274A3E1A00FF7DE7 /* MyWebView.swift */,
+				3EABDF71274A400A00FF7DE7 /* MyText.swift */,
+				3ECF93EA2749270100F60CFF /* Preview Content */,
 			);
 			path = SwiftUI_Tutorial_01;
 			sourceTree = "<group>";
@@ -143,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EABDF72274A400A00FF7DE7 /* MyText.swift in Sources */,
 				3ECF93E7274926FF00F60CFF /* ContentView.swift in Sources */,
 				3ECF93F32749319300F60CFF /* MyColorView.swift in Sources */,
+				3EABDF6F274A3E1A00FF7DE7 /* MyWebView.swift in Sources */,
 				3ECF93F52749391A00F60CFF /* MyVStackView.swift in Sources */,
 				3ECF93E5274926FF00F60CFF /* SwiftUI_Tutorial_01App.swift in Sources */,
 			);
@@ -280,6 +290,7 @@
 				DEVELOPMENT_TEAM = BR8CN8N4Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Tutorial-01-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,6 +320,7 @@
 				DEVELOPMENT_TEAM = BR8CN8N4Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Tutorial-01-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
